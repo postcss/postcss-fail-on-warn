@@ -1,6 +1,6 @@
 {
   "name": "postcss-fail-on-warn",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "PostCSS plugin throws a error on any warning from previous PostCSS plugins",
   "keywords": [
     "postcss",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@logux/eslint-config": "^27.0.0",
+    "clean-publish": "^1.1.0",
     "eslint": "^5.10.0",
     "eslint-config-postcss": "^3.0.7",
     "eslint-config-standard": "^12.0.0",
