@@ -1,0 +1,44 @@
+{
+  "name": "postcss-fail-on-warn",
+  "version": "0.0.0",
+  "description": "PostCSS plugin throws a error on any warning from previous PostCSS plugins",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "warning"
+  ],
+  "scripts": {
+    "test": "jest && eslint *.js"
+  },
+  "author": "Andrey Sitnik <andrey@sitnik.ru>",
+  "license": "MIT",
+  "repository": "ai/postcss-fail-on-warn",
+  "bugs": {
+    "url": "https://github.com/ai/postcss-fail-on-warn/issues"
+  },
+  "homepage": "https://github.com/ai/postcss-fail-on-warn",
+  "dependencies": {
+    "postcss": "^7.0.6"
+  },
+  "devDependencies": {
+    "@logux/eslint-config": "^27.0.0",
+    "eslint": "^5.10.0",
+    "eslint-config-postcss": "^3.0.7",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-es5": "^1.3.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^23.6.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
