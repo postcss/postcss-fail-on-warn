@@ -2,6 +2,8 @@
 
 [PostCSS] plugin throws a error on any warning from previous PostCSS plugins.
 
+[PostCSS]: https://postcss.org/
+
 ## Usage
 
 ```js
