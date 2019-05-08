@@ -13,11 +13,7 @@
   },
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
-  "repository": "ai/postcss-fail-on-warn",
-  "bugs": {
-    "url": "https://github.com/ai/postcss-fail-on-warn/issues"
-  },
-  "homepage": "https://github.com/ai/postcss-fail-on-warn",
+  "repository": "postcss/postcss-fail-on-warn",
   "dependencies": {
     "postcss": "^7.0.6"
   },
