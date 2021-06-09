@@ -1,9 +1,10 @@
-const warningsReporter = function (opts = {}) {
+const warningsReporter = () => {
   return {
     postcssPlugin: 'postcss-warnings-reporters',
     OnceExit (css, { result }) {
-      const [first, ...rest] = result.warnings()
+      let [first, ...rest] = result.warnings()
 
+      /* eslint-disable no-console */
       rest && rest.map(console.log)
 
       if (first) {

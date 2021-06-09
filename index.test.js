@@ -1,6 +1,6 @@
-var postcss = require('postcss')
+let postcss = require('postcss')
 
-var plugin = require('./')
+let plugin = require('./')
 
 function run (another, opts) {
   return function () {
@@ -8,12 +8,12 @@ function run (another, opts) {
   }
 }
 
-it('does not do anything without warnings', function () {
-  expect(run(function () { })).not.toThrow()
+it('does not do anything without warnings', () => {
+  expect(run(() => { })).not.toThrow()
 })
 
-it('throw first warning', function () {
-  expect(run(function (root, result) {
+it('throw first warning', () => {
+  expect(run((root, result) => {
     result.warn('Test 1')
     result.warn('Test 2')
   })).toThrow('Test 1')
