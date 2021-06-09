@@ -1,6 +1,6 @@
 const warningsReporter = () => {
   return {
-    postcssPlugin: 'postcss-warnings-reporters',
+    postcssPlugin: 'postcss-fail-on-warn',
     OnceExit (css, { result }) {
       let [first, ...rest] = result.warnings()
 
