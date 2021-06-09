@@ -40,7 +40,10 @@
     "simple-git-hooks": "^2.4.1"
   },
   "eslintConfig": {
-    "extends": "@logux/eslint-config"
+    "extends": "@logux/eslint-config",
+    "rules": {
+      "no-console": "off"
+    }
   },
   "jest": {
     "testEnvironment": "node",
