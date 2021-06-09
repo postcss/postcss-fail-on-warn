@@ -1,6 +1,6 @@
 {
   "name": "postcss-fail-on-warn",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "PostCSS plugin throws a error on any warning from previous PostCSS plugins",
   "keywords": [
     "postcss",
