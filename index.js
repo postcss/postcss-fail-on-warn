@@ -1,9 +1,18 @@
-var postcss = require('postcss')
+const warningsReporter = () => {
+  return {
+    postcssPlugin: 'postcss-fail-on-warn',
+    OnceExit (css, { result }) {
+      let [first, ...rest] = result.warnings()
 
-module.exports = postcss.plugin('postcss-fail-on-warn', function () {
-  return function (root, result) {
-    if (result.warnings().length > 0) {
-      throw new Error(result.warnings()[0])
+      /* eslint-disable no-console */
+      rest && rest.map(console.log)
+
+      if (first) {
+        throw new Error(first)
+      }
     }
   }
-})
+}
+
+module.exports = warningsReporter
+module.exports.postcss = true
