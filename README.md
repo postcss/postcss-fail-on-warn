@@ -18,7 +18,7 @@
 **Step 1:** Install plugin:
 
 ```sh
-npm install --save-dev postcss postcss-focus
+npm install --save-dev postcss postcss-fail-on-warn
 ```
 
 **Step 2:** Check you project for existed PostCSS config: `postcss.config.js`
